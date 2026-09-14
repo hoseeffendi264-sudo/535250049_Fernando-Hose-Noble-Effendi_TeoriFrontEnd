@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #B22234;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 3px solid #B22234;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.photo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #B22234 0%, #8B1A2B 100%);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.name {
+    font-size: 1.8rem;
+    color: #B22234;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.university {
+    font-size: 1.2rem;
+    color: #8B1A2B;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.semester {
+    font-size: 1rem;
+    color: #B22234;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, #B22234 0%, #8B1A2B 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .profile-card {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .photo-container {
+        width: 40%;
+        padding: 40px;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-info {
+        width: 60%;
+        text-align: left;
+        padding: 40px;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .university {
+        font-size: 1.3rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .skills {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .photo-container {
+        width: 35%;
+        padding: 50px;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-info {
+        width: 65%;
+        padding: 50px;
+    }
+
+    .name {
+        font-size: 2.3rem;
+    }
+
+    .university {
+        font-size: 1.5rem;
+    }
+
+    .semester {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .skill-tag {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .university {
+        font-size: 1rem;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
